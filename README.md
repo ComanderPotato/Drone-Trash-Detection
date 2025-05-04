@@ -16,19 +16,19 @@
 
 ## Pipeline
 
-\*Data Preparation
+### Data Preparation
 
 - Data collection
 - Data preprocessing (normalisation, standardisation)
 - Data augmentation
 - splitting data - train/test/validation 80-10-10, 70-15-15
 
-\*Feature engineering
+### Feature engineering
 
 - HOG descriptors
 - Data augmentation
 
-\*Modeling & Experimenting
+### Modeling & Experimenting
 
 - Transfer learning
 - Model selection (Yolov5, Unet/Resnet, Mask-RCNN, Faster-RCNN)
@@ -38,7 +38,7 @@
 - Early stopping criteria (callbacks - tensorflow)
 - training epochs > 1000
 
-\*Evaluation
+### Evaluation
 
 - Intersection over Union (IoU)
 - Accuracy, recall, confusion matrix, precision, F1 score
