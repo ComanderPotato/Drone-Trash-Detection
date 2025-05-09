@@ -15,7 +15,7 @@ args = parser.parse_args()
 BASE_DIR = Path("data")
 IMAGES_DIR = BASE_DIR / "images"
 ANNOTATIONS_PATH = BASE_DIR / "annotations.json"
-SPLITS = {'train': args.train_split, 'val': args.test_split, 'test': args.val_split}
+SPLITS = {'train': args.train_split, 'val': args.val_split, 'test': args.test_split}
 
 
 for split in SPLITS:
