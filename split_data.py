@@ -6,9 +6,10 @@ from pathlib import Path
 import argparse
 import yaml
 parser = argparse.ArgumentParser(description='User args')
-parser.add_argument('--train_split', type=float, default=0.7, required=False, help='Percentage of images used for the testing set')
-parser.add_argument('--val_split', type=float, default=0.2, required=False, help='Percentage of images used for the validation set')
-parser.add_argument('--test_split', type=float, default=0.1, required=False, help='Percentage of images used for the train set')
+parser.add_argument('--dataset_percentage', type=float, default=1, required=False, help='Percentage of dataset to use')
+parser.add_argument('--train_split', type=float, default=0.7, required=False, help='Split to use for the testing set')
+parser.add_argument('--val_split', type=float, default=0.2, required=False, help='Split to use for the validation set')
+parser.add_argument('--test_split', type=float, default=0.1, required=False, help='Split to use for the train set')
 
 args = parser.parse_args()
 
