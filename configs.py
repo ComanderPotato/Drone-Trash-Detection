@@ -48,6 +48,32 @@ default_training_config = {
     "val": True,
     "plots": False
 }
+default_validation_config = {
+    "data": None,                     # str: Path to dataset config file (e.g., coco8.yaml)
+    "imgsz": 640,                     # int: Size of input images
+    "batch": 16,                      # int: Number of images per batch
+    "save_json": False,              # bool: Save results to JSON
+    "conf": 0.001,                   # float: Confidence threshold for detections
+    "iou": 0.6,                      # float: IOU threshold for NMS
+    "max_det": 300,                 # int: Max detections per image
+    "half": True,                    # bool: Enable FP16 precision
+    "device": None,                  # str: Device (e.g., cpu, cuda:0)
+    "dnn": False,                    # bool: Use OpenCV DNN module
+    "plots": False,                  # bool: Generate and save plots
+    "classes": None,                 # list[int]: List of class IDs to evaluate
+    "rect": True,                    # bool: Use rectangular inference
+    "split": "val",                  # str: Dataset split to use
+    "project": None,                 # str: Project directory name
+    "name": None,                    # str: Name of validation run
+    "verbose": False,                # bool: Show detailed logs
+    "save_txt": False,              # bool: Save results in text files
+    "save_conf": False,             # bool: Include confidences in save_txt output
+    "save_crop": False,             # bool: Save cropped images of detections
+    "workers": 8,                    # int: Number of data loading workers
+    "augment": False,               # bool: Enable test-time augmentation
+    "agnostic_nms": False,          # bool: Use class-agnostic NMS
+    "single_cls": False             # bool: Treat all classes as one
+}
 
 default_inference_config = {
     "source": "ultralytics/assets",
